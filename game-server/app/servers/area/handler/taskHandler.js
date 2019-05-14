@@ -32,8 +32,9 @@ handler.startTask = function(msg, session, next) {
 	var curTasks = player.curTasks;
 	//check out the curTasks, if curTasks exist, return.
 	for (var _ in curTasks) {
-		if (!!curTasks[taskId])
-		return;
+		if (!!curTasks[taskId]){
+            return;
+		}
 	}
 	taskDao.createTask(playerId, taskId, function(err,task) {
 		if (!!err) {

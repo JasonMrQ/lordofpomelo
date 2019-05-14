@@ -22,7 +22,7 @@ var client = mysql.createConnection({
     "port": "3306",
     "database": "Pomelo",
     "user": "root",
-    "password": "123456"
+    "password": "fx"
 });
 
 var START = 'start';

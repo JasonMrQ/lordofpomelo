@@ -42,7 +42,7 @@ handler.equip = function(msg, session, next) {
  * @api public
  */
 handler.unEquip = function(msg, session, next) {
-	var player = session.area.getPlayer(session.get('playerId'));
+  var player = session.area.getPlayer(session.get('playerId'));
   var status = false;
   var bagIndex = -1;
   if (msg.putInBag) {
